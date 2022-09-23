@@ -7,6 +7,6 @@ df_final = pd.concat([df1, df2]).drop_duplicates(subset=['Name', 'Alter', 'Gesch
 
 df_final2 = df_final.drop_duplicates(subset=['Name', 'Alter']).reset_index(drop=True)
 
-df_final2.to_csv('merged12.csv', index=False)
+df_final2.to_csv('merged1and2.csv', index=False)
 
 print(df_final2)
